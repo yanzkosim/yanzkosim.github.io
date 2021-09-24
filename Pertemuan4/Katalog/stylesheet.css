@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    top: 0;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.header-menu{
+    list-style: none;
+    margin: 0;
+    padding :0;
+    text-align: center;
+}
+.header-menu li{
+    display: inline;
+}
+.header-menu a{
+    display: inline-block;
+    color: black;
+    padding: 10px;
+}
+
+.card {
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.content {
+    flex: 50%;
+    padding: 10px;
+}
+
+.content-text {
+    flex: 50%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.content-image {
+    width: 300px;
+    height: 400px;
+    float: right;
+    
+}
+
+.book-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.book-author {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.description {
+    height: left;
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.5;
+    margin-right: 220px;
+}
+
+.beli {
+    display: flex;
+}
+
+.beli p {
+    margin-left: 15px;
+}
+
+.button {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    padding: 15px 25px;
+}
+
+.footer {
+    text-align: center;
+}
