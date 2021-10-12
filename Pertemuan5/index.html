@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi Kuliah Tatap Muka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Formulir Kuliah Tatap Muka</h2>
+    <div class="formulir">
+        <form action="" onsubmit="validasi()">
+            <div class="elem">
+                <label>Nama:</label>
+                <input type="text" name="name" id="nama" />
+            </div>
+            <div class="elem">
+                <label>NRP:</label>
+                <input type="text" name="nrp" id="nrp" />
+            </div>
+            <div class="elem">
+                <label>Status Vaksin:</label><br>
+                <input type="radio" name="status-vaksin" id="belum" value="Belum" />
+                <label for="belum">Belum</label>
+                <input type="radio" name="status-vaksin" id="dosis1" value="Dosis 1" />
+                <label for="dosis1">Dosis 1</label>
+                <input type="radio" name="status-vaksin" id="dosis2" value="Dosis 2" />
+                <label for="dosis2">Dosis 2</label>
+            </div>
+            <div class="elem">
+                <label for="dept">Departemen:</label>
+                <select name="dept" id="dept">
+                    <option value="Departemen Informatika">Departemen Informatika</option>
+                    <option value="Departemen Informatika">Departemen Sistem Informasi</option>
+                </select>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div>
+                <label>Alamat:</label>
+                <textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

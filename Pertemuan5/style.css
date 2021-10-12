@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 28px;
+}
+
+.formulir {
+    padding: 1em;
+    margin: 2em auto;
+    width: 17em;
+    background: #fff;
+    border-radius: 3px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.elem {
+    margin: 15px auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 8px;
+  width: 95%;
+  background: #efefef;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+}
