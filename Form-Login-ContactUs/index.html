@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+        <div class="row justify-content-center align-items-center m-auto">
+            <div id=login-form class="col-4">
+                <div class="logo px-4 py-5 mb-4 mt-2"></div>
+                <div id="container-login">
+                    <form autocomplete="off" onsubmit="return submitForm()">
+                        <div class="row px-3">
+                            <input class="mb-4 input-box mr-auto ml-auto" type="email" name="email" id="email"
+                                placeholder="Email address / Username" required>
+                        </div>
+
+                        <div class="row px-3">
+                            <input class="mb-4 input-box mr-auto ml-auto" type="password" name="password" id="password"
+                                placeholder="Password" required>
+                        </div>
+
+                        <div class="row px-3 mb-4 ml-2">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input id="chk1" type="checkbox" name="chk" class="custom-control-input">
+                                <label for="chk1" class="custom-control-label text-sm">Remember me</label>
+                            </div>
+
+                            <a href="#" class="ml-auto mb-0 text-sm mr-4">Forgot Password?</a>
+                        </div>
+
+                        <div class="row mb-3 px-3">
+                            <button type="submit" class="btn btn-blue text-center text-white-14 m-auto" name="submit"
+                                id="submit" value="submit">Login</button>
+                        </div>
+                        <div class="row mb-3 px-3">
+                            <button type="submit" class="btn btn-blue text-center text-white-14 m-auto" name="submit"
+                                id="submit" value="submit">Create an Account</button>
+                        </div>
+                    </form>
+                    <div class="mb-4">
+                        <center>
+                            <h5 class="font-weight-bold">Have a message for us? Please drop <a href="contact.html" class="text-info">here</a>.</h5>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        let i = 0;
+        
+        function slideShow() {
+            if (i > 13) i = 0;
+            
+            let x = "/img/bg" + toString(i) + ".jpg";
+            document.body.style.backgroundImage = "url('/img/bg" + i + ".jpg')";
+            
+            i++;
+            setTimeout(slideShow, 20000);
+        }
+        
+        function submitForm() {
+            alert("Login berhasil");
+        }
+        slideShow();
+    </script>
+</body>
+
+</html>

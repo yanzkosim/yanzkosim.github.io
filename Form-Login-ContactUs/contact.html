@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <title>Contact</title>
+</head>
+
+
+<body>
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+        <div class="row justify-content-center align-items-center m-auto">
+            <div id=login-form class="col-5">
+                <div class="logo px-4 py-5 mb-4 mt-2"></div>
+                <div id="container-login">
+                    <form autocomplete="off" onsubmit="return submitForm()" class="py-3">
+                        <div class="row px-3">
+                            <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Name</h6>
+                            </label>
+
+                            <input class="mb-4" type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="row px-3">
+                            <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Email</h6>
+                            </label>
+
+                            <input class="mb-4" type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+                        </div>
+
+                        <div class="row px-3">
+                            <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Phone</h6>
+                            </label>
+
+                            <input class="mb-4" type="text" name="phone" id="phone" placeholder="Enter phone number" required>
+                        </div>
+
+                        <div class="row px-3">
+                            <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Message</h6>
+                            </label>
+
+                            <textarea class="mb-4" type="text" name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="row mb-3 px-3">
+                            <button type="submit" class="btn btn-blue text-center text-white-14 m-auto" name="submit"
+                                id="submit" value="submit">Send</button>
+                        </div>
+                    </form>
+                    <div class="mb-4">
+                        <center>
+                            <h5 class="font-weight-bold">Click <a href="index.html" class="text-info">here</a> if you want to login.</h5>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        let i = 0;
+        
+        function slideShow() {
+            if (i > 13) i = 0;
+            
+            let x = "/img/bg" + toString(i) + ".jpg";
+            document.body.style.backgroundImage = "url('/img/bg" + i + ".jpg')";
+            
+            i++;
+            setTimeout(slideShow, 20000);
+        }
+        
+        function submitForm() {
+            alert("Login berhasil");
+        }
+        slideShow();
+    </script>
+</body>
+
+</html>
