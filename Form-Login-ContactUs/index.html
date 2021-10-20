@@ -64,8 +64,7 @@
         function slideShow() {
             if (i > 13) i = 0;
             
-            let x = "/img/bg" + toString(i) + ".jpg";
-            document.body.style.backgroundImage = "url('/img/bg" + i + ".jpg')";
+            document.body.style.backgroundImage = "url('img/bg" + i + ".jpg')";
             
             i++;
             setTimeout(slideShow, 20000);
