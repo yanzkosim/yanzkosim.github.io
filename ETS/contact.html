@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+        <div class="row justify-content-between" id="header">
+            <h1>Personal Blog </h1>
+            <ul>
+                <li><a class="pl-4 my-auto" href="about.html">About me</a></li>
+                <li><a class="pl-4 pr-4 my-auto" href="contact.html" style="color: rgba(219, 219, 219, 0.9); text-decoration: underline;">Contact</a></li>
+                <li><a class="pl-4 pr-4 my-auto" href="https://yanzkosim.github.io/Pweb1-CV/" target="_blank">CV</a></li>
+                <li><a class="pr-4 my-auto" href="index.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="container my-4">
+            <div class="row row justify-content-center">
+                <div class="col-sm-6" style="border: 1px solid rgb(155,155,155);">
+                    <h3 class="h3 ml-4 mt-5 mb-5 font-weight-bold">Ask a Question</h3>
+                    <form method="post" id="validasiLogin">
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Your Email*</label>
+                            <input type="email" name="email" id="email" class="form-control form-control-lg required mt-5 mb-5" placeholder="Your Email*">
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Your Name*</label>
+                            <input type="text" name="name" id="name" class="form-control form-control-lg required mt-5 mb-5" placeholder="Your Name*">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="sr-only">Subject*</label>
+                            <input type="text" name="subject" id="subject" class="form-control form-control-lg required mt-5 mb-5" placeholder="Subject*">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Type Your Message*</label>
+                            <textarea name="message" id="message" class="form-control form-control-lg required mt-5 mb-5" placeholder="Type Your Message*" rows="5"></textarea>
+                        </div>
+                        <button class="btn mb-4" id="button" type="submit" style="background-color: #5f5f5f; color: white">Send Mail</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer style="text-align: center;">
+            <p>Copyright &copy; 2021 Stefanus Albert Kosim.</p>
+        </footer>
+    </div>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#validasiLogin').validate({
+            rules: {
+                name: {
+                    minlength: 4,
+                    maxlength: 50
+                },
+                subject: {
+                    minlength: 6,
+                    maxlength: 25
+                },
+                message: {
+                    minlength: 30,
+                    maxlength: 255
+                }
+            },
+            messages: {
+                email: {
+                    required: "Email harus diisi"
+                },
+                name: {
+                    required: "Nama harus diisi",
+                    minlength: "Nama minimum 4 karakter",
+                    maxlength: "Nama maksimum 50 karakter"
+                },
+                subject: {
+                    required: "Subject harus diisi",
+                    minlength: "Subject minimum 6 karakter",
+                    maxlength: "Subject maksimum 25 karakter"
+                },
+                message: {
+                    required: "Message harus diisi",
+                    minlength: "Message minimum 30 karakter",
+                    maxlength: "Message maksimum 255 karakter"
+                }
+            }
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,76 @@
+body {
+    background-color: rgba(28, 28, 29, 0.9);
+    overflow-x: hidden;
+    font-family: 'Poppins';
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(194, 188, 188, 0.9);;
+}
+
+#header {
+    width: 100%;
+    border-bottom: 1px solid rgb(94, 94, 94);
+    display: flex;
+}
+
+#header li {
+    list-style: none;
+    font-size: 20px;
+    float: right;
+}
+
+#header a {
+    font-size: larger;
+}
+
+a {
+    color:rgba(168, 162, 162, 0.9);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(219, 219, 219, 0.9);
+}
+
+.clear {
+    clear: both;
+}
+
+.section-message {
+    padding-bottom: 20px;
+}
+
+.section-message p {
+    margin: auto;
+    padding-left: 50px;
+}
+
+img {
+    width: 275px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+}
+
+#photo-content {
+    text-align: center;
+    border-bottom: 1px solid rgb(94, 94, 94);
+}
+
+#overview {
+    text-align: center;
+}
+
+#skills-table {
+    max-width: 600px; 
+    margin: 3em auto;
+}
+#skills-table li {
+    text-align: left;
+    list-style-type: none;
+}
+
+footer {
+    border-top: 1px solid rgb(94, 94, 94);
+    padding-top: 10px;
+}
